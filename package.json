@@ -1,0 +1,34 @@
+{
+  "name": "version2",
+  "version": "1.0.0",
+  "description": "Urban dictionary for developers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kumarivb/define.this.v2.git"
+  },
+  "author": "k",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kumarivb/define.this.v2/issues"
+  },
+  "homepage": "https://github.com/kumarivb/define.this.v2#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.5",
+    "nightmare": "^3.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.11",
+    "method-override": "^2.3.10",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.3",
+    "sequelize": "^4.37.4"
+  }
+}
