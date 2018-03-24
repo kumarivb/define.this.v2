@@ -37,14 +37,14 @@ app.set('view engine', 'handlebars');
 app.set('views', __dirname + '/views');
 
   // routes
-var routes = require("./controllers/controller.js");
+var routes = require("./controllers/controller");
 
-// app.use(routes);
+app.use(routes);
 // app.use("/update", routes);
 // app.use("/create", routes);
 
-// var test = require("./routes/test-route");
-// test(app);
+//var test = require("./controllers/controller");
+//test(app);
 
 // listen on port 3000
 var PORT = process.env.PORT || 3000;

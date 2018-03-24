@@ -1,0 +1,86 @@
+<div class="container">
+    <!-- search -->
+    <div class="row">
+        <form>
+            <div class="col s9">
+                <input id="search" type="search" value="ASK ME ANYTHING" required>
+            </div>
+            <div class="col s3">
+                <button type="submit" class="button">Define.this</button>
+            </div>
+        </form>        
+    </div>
+
+    <!-- 3 most recent -->
+    <div class="row">
+        <div class="col s4">
+            <div id="indexCard">
+                {{> card }} 
+            </div>
+        </div>
+        <div class="col s4">
+            <div id="indexCard">
+                {{> card }}
+            </div>
+        </div>
+        <div class="col s4">
+            <div id="indexCard">
+                {{> card }}
+            </div>
+        </div>
+    </div>
+
+    <!-- place holders, stretch goals -->
+    <div class="row">
+        <div class="col s3">
+            <div class="card center">
+                <div class="card-section">
+                    <div class="smBold">DEFINE.THIS OF THE DAY</div>
+                </div>
+                <div class="card-divider">
+                    <div class="lrgBold">WORD</div>
+                    <div class="smBold">DEFINITION</div>
+                </div>
+            </div>
+        </div>
+        <div class="col s3">
+            <div class="card">
+                <div class="card center">
+                    <div class="card-section">
+                        <div class="smBold">TOPIC.THIS OF THE DAY</div>
+                    </div>
+                    <div class="card-divider">
+                        <div class="lrgBold">TOPIC</div>
+                        <div class="smBold">COPY</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s3">
+            <div class="card">
+                <div class="card center">
+                    <div class="card-section">
+                        <div class="smBold">ASKED.THIS OF THE DAY</div>
+                    </div>
+                    <div class="card-divider">
+                        <div class="lrgBold">QUESTION</div>
+                        <div class="smBold">COPY</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s3">
+            <div class="card">
+                <div class="card center">
+                    <div class="card-section">
+                        <div class="smBold">USER.THIS OF THE DAY</div>
+                    </div>
+                    <div class="card-divider">
+                        <div class="lrgBold">NAME</div>
+                        <div class="smBold">COPY</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
