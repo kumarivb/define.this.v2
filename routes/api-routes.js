@@ -54,6 +54,19 @@
 //   });
 // };
 
-// var db = require("../models");
+var db = require("../models");
 
-
+module.exports = function(app) {
+  
+  app.get("/api/Entries/:id", function(req, res) {
+    // Find one Author with the id in req.params.id and return them to the user with res.json
+    db.Entries.findOne({
+      where: {
+        id: req.params.id
+      }
+    }).then(function(dbEntries) {
+      res.json(dbEntries);
+    });
+  });
+  
+  });
