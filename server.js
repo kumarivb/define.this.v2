@@ -33,7 +33,7 @@ app.engine("handlebars", exphbs({
 }));
 
 // set the view engine to use handlebars
-app.set('view engine', 'handlebars');
+app.set("view engine", "handlebars");
 app.set('views', __dirname + '/views');
 
   // routes

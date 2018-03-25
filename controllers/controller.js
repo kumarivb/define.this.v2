@@ -19,7 +19,9 @@ router.get("/", function(req, res) {
 router.get("/index", function(req, res) {
   // replace old function with sequelize function
   db.Entries.findAll({
-    include: [db.Definition],
+//    include: [db.Definition],
+//   where: { 'id': 1},
+	   
   })
   // use promise method to pass the burgers...
     .then(function(dbEntry) {
@@ -27,6 +29,9 @@ router.get("/index", function(req, res) {
       var hbsObject = {
         entry: dbEntry
       };
+	  console.log("dbEntry is \n" + JSON.stringify(dbEntry));	  
+	  console.log("hbsOject is \n" + JSON.stringify(hbsObject));
+	  //console.log(hbsObject);
       return res.render("index", hbsObject);
     });
 });
