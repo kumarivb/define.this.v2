@@ -1,6 +1,6 @@
 <div class="container">
     <!-- search -->
-    <div class="row">
+   # <div class="row">
         <form>
             <div class="col s9">
                 <input id="search" type="search" value="ASK ME ANYTHING" required>
@@ -13,6 +13,10 @@
 
     <!-- 3 most recent -->
     <div class="row">
+    {{#each entry}}
+		<p>Text : {{this.id}}. {{this.entry}}</p>
+				
+	{{/each}}
         <div class="col s4">
             <div id="indexCard">
                 {{> card }} 
