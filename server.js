@@ -34,14 +34,14 @@ app.engine("handlebars", exphbs({
 
 // set the view engine to use handlebars
 app.set('view engine', 'handlebars');
-app.set('views', __dirname + '/views');
+app.set('views', "./views");
 
   // routes
 var routes = require("./controllers/controller");
 
 app.use(routes);
-// app.use("/update", routes);
-// app.use("/create", routes);
+app.use("/update", routes);
+app.use("/create", routes);
 
 //var test = require("./controllers/controller");
 //test(app);
