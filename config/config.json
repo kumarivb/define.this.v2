@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "asdf",
+    "password": "",
     "database": "definethis_db",
     "host": "localhost",
     "dialect": "mysql"
