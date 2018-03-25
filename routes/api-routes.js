@@ -56,13 +56,4 @@
 
 // var db = require("../models");
 
-// module.exports = function(app) {
-  
-//   app.get("/api/definitions", function(req, res) {
-//     // Find one Author with the id in req.params.id and return them to the user with res.json
-//     db.Definitions.findAll({}).then(function(dbDefinitions) {
-//         res.json(dbDefinitions);
-//     });
-//   });
-  
-  };
+
