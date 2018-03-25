@@ -40,8 +40,8 @@ app.set('views', __dirname + '/views');
 var routes = require("./controllers/controller");
 
 app.use(routes);
-// app.use("/update", routes);
-// app.use("/create", routes);
+app.use("/update", routes);
+app.use("/create", routes);
 
 //var test = require("./controllers/controller");
 //test(app);
