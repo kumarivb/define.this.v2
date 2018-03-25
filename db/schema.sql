@@ -1,7 +1,8 @@
 #DROP DATABASE IF EXISTS definethis_db;
-CREATE DATABASE definethis_db;
-#DROP TABLE IF EXISTS Entries;
+#CREATE DATABASE definethis_db;
 #DROP TABLE IF EXISTS Definitions;
+#DROP TABLE IF EXISTS Entries;
+
 
 USE definethis_db;
 
