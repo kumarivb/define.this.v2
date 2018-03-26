@@ -5,6 +5,7 @@ $( document ).ready(function() {
 // Ajax + form info
 
     $(".modal1").on("submit", function(event) {
+		console.log(".modal1 submit was called);
         event.preventDefault();
     
         var entryInfo = {
@@ -16,11 +17,11 @@ $( document ).ready(function() {
         };
 
         $.ajax({
-        method: "PUT",
-        url: "/index/update",
+        method: "POST",
+        url: "/entries/create",
         data: entryInfo
         }).then(function(data) {
-        // reload page to display devoured burger in proper column
+		console.log("completed post");
         location.reload();
         });
     
