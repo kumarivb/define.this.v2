@@ -4,7 +4,7 @@
 #DROP TABLE IF EXISTS Entries;
 
 
-USE definethis_db;
+#USE definethis_db;
 
 CREATE TABLE Entries(
   id INTEGER AUTO_INCREMENT,
