@@ -52,6 +52,20 @@ db.sequelize.query("SELECT a.*, b.*  FROM entries a, definitions b  where b.entr
 });
 
 
+router.post("/entries/create", function(req, res) {
+	console.log("router.post was called");
+    db.Entries.create({
+		entry:req.body.entry,
+		userId:req.body.userId,
+		context:req.body.context,
+		contextLink:req.body.contextLink,
+	})
+    .then(function(dbEntry) {
+	  console.log("dbEntry is " + JSON.stringify(dbEntry));
+      res.redirect("/");
+    });
+  });
+
 router.post("/api/getfirstentry", function(req, res) {
     db.Definition.findAll({
 		where:{
