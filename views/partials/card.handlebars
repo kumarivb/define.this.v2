@@ -1,6 +1,29 @@
 <!-- Handlebars.registerPartial('card', '{{card}}') -->
+{{#each entry}}
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="">
+                    <div class="card" style="border-color:#182b52;">
+                        <div class="card-body">
+                            <h4 class="card-title" style="color:#182b52;">{{ this.id }}.</h4>
+                            <h6 class="text-muted card-subtitle mb-2">{{ this.entry }}.</h6>
+                            <p class="card-text">{{this.context}}</p>
+                            <a class="card-link waves-effect waves-light btn modal-trigger" href="#modal1">Create</a>
+                            <a class="card-link waves-effect waves-light btn modal-trigger" href="#modal2">Reply</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/each}}
 
-<div class="" id="">
+
+
+
+
+{{!-- <div class="" id="">
 Hello?
 <!-- Modal Trigger -->
     <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Create</a>
@@ -10,4 +33,4 @@ Hello?
 		<p>Text : {{this.id}}. {{this.entry}}. {{this.context}}</p>
 				
 	{{/each}}
-</div>
+</div> --}}

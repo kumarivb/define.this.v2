@@ -1,88 +1,60 @@
-<div class="container">
-    <!-- search -->
-    <div class="row">
-        <form>
-            <div class="col s9">
-                <input id="search" type="search" value="ASK ME ANYTHING" required>
-            </div>
-            <div class="col s3">
-                <button type="submit" class="button">Define.this</button>
-            </div>
-        </form>        
+<!-- search -->
+<div class="card align-self-center border-0" style="padding-top:15px;">
+    <div class="card-body align-self-center" style="padding-left:0px;padding-top:0px;">
+        <input type="text" name="search" placeholder="WHAT SHALL I DEFINE" style="width:670px;margin-left:0px;color:#182b52;">
+        <a class="btn btn-primary border-0" role="button" href="#" style="font-size:12px;background-color:#182b52;padding-bottom:6px;margin-bottom:5px;margin-left:15px;">DEFINE.THIS</a>
     </div>
+</div>
 
     <!-- 3 most recent -->
     <div class="row">
-    {{#each entry}}
-		<p>Text : {{this.id}}. {{this.entry}}</p>
-				
-	{{/each}}
-        <div class="col s4">
-            <div id="indexCard">
-                {{> card }} 
-            </div>
-        </div>
-        <div class="col s4">
-            <div id="indexCard">
-                {{> card }}
-            </div>
-        </div>
+        {{> card}}
     </div>
 
-    <!-- place holders, stretch goals -->
-    <div class="row">
-        <div class="col s3">
-            <div class="card center">
-                <div class="card-section">
-                    <div class="smBold">DEFINE.THIS OF THE DAY</div>
-                </div>
-                <div class="card-divider">
-                    <div class="lrgBold">WORD</div>
-                    <div class="smBold">DEFINITION</div>
-                </div>
-            </div>
-        </div>
-        <div class="col s3">
-            <div class="card">
-                <div class="card center">
-                    <div class="card-section">
-                        <div class="smBold">TOPIC.THIS OF THE DAY</div>
-                    </div>
-                    <div class="card-divider">
-                        <div class="lrgBold">TOPIC</div>
-                        <div class="smBold">COPY</div>
+<!-- place holders, stretch goals -->
+<div style="padding-right:0px;padding-top:20px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" style="border-color:#182b52;">
+                    <div class="card-body" style="height:315px;">
+                        <h6 class="text-center text-muted card-subtitle mb-2" style="font-size:14px;">DEFIN.THIS OF THE DAY</h6>
+                        <h4 class="text-center card-title" style="color:#182b52;">COOKIES</h4>
+                        <p class="text-center align-content-center card-text">This is the data sent by an Internet server to a browser. Each time the browser accesses the same server, it sends the data back as a means of tracking how (and how often) it accesses the server.<br></p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col s3">
-            <div class="card">
-                <div class="card center">
-                    <div class="card-section">
-                        <div class="smBold">ASKED.THIS OF THE DAY</div>
-                    </div>
-                    <div class="card-divider">
-                        <div class="lrgBold">QUESTION</div>
-                        <div class="smBold">COPY</div>
+            <div class="col-md-3">
+                <div class="card" style="border-color:#182b52;">
+                    <div class="card-body" style="min-height:315px;">
+                        <h6 class="text-center text-muted card-subtitle mb-2" style="font-size:14px;">TOPIC. THIS OF THE DAY</h6>
+                        <h4 class="text-center card-title" style="color:#182b52;">HANDLEBARS</h4>
+                        <p class="text-center card-text">Handlebars provides the power necessary to let you build semantic templates<strong> </strong>effectively with no frustration.<br></p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col s3">
-            <div class="card">
-                <div class="card center">
-                    <div class="card-section">
-                        <div class="smBold">USER.THIS OF THE DAY</div>
+            <div class="col-md-3">
+                <div class="card" style="border-color:#182b52;">
+                    <div class="card-body" style="min-height:315px;">
+                        <h6 class="text-center text-muted card-subtitle mb-2" style="font-size:14px;">ASK.THIS OF THE DAY</h6>
+                        <h4 class="text-center card-title" style="color:#182b52;">JS CALLBACK</h4>
+                        <p class="text-center card-text">A callback function is a piece of JavaScript code that executes after the main function that the callback is attached to executes successfully.<br></p>
                     </div>
-                    <div class="card-divider">
-                        <div class="lrgBold">NAME</div>
-                        <div class="smBold">COPY</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="border-color:#182b52;">
+                    <div class="card-body" style="min-height:315px;">
+                        <h6 class="text-center text-muted card-subtitle mb-2" style="font-size:14px;">USER.THIS OF THE DAY</h6>
+                        <h4 class="text-center card-title" style="color:#182b52;">AUSTIN12</h4>
+                        <p class="text-center card-text">Biology teacher in small independent school. Successfully develop marine biology curriculum for grades 5-8.<br></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 
 
 
