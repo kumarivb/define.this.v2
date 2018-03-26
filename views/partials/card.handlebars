@@ -1,9 +1,8 @@
 <!-- Handlebars.registerPartial('card', '{{card}}') -->
 
 <div class="" id="">
-Hello?
     {{#each entry}}
-		<p>Text : {{this.id}}. {{this.entry}}</p>
+		<p>Text : {{ this.id }}. {{ this.entry }}. {{this.context}}</p>
 				
 	{{/each}}
 </div>
