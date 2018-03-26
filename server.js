@@ -51,15 +51,15 @@ app.use("/create", routes);
 //var test = require("./controllers/controller");
 //test(app);
 
-// listen on port 3000
-// var PORT = process.env.PORT || 3000;
-// db.sequelize.sync().then(function() {
-//   app.listen(PORT, function() {
-//     console.log("App listening on PORT " + PORT);
-//   });
-// });
 
-var port = process.env.PORT || 3000;
-server.listen(port, function() {
-  console.log("App is running on port " + port);
+var PORT = process.env.PORT || 3000;
+db.sequelize.sync().then(function() {
+  app.listen(PORT, function() {
+    console.log("App listening on PORT " + PORT);
+  });
 });
+
+// var port = process.env.PORT || 3000;
+// server.listen(port, function() {
+//   console.log("App is running on port " + port);
+// });
