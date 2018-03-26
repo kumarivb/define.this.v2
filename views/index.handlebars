@@ -64,12 +64,12 @@
             <h4>New Entry:</h4>
             <p>A bunch of text</p>
 <!-- Submit Modal New Entry Form-->
-                <form action="/index/create" method="POST">
+                <form  id="valOne" action="/index/create" method="POST" name="valOne">
                     {{!-- <textarea id="textarea1" class="materialize-textarea" name="entry" id="entry"></textarea> <label for="textarea1">Textarea</label> --}}
-                    <input type="text" class="form-control" name="entry" value="" id="entry" placeholder="Keyword/Phrase">
+                    <input type="text" class="form-control validate" name="entry" value="" id="entry" placeholder="Keyword/Phrase">
                     <input type="text" class="form-control" name="userId" value="" id="userId" placeholder="User Name">
-                    <input type="text" class="form-control" name="context" value="" id="context" placeholder="Context">
-                    <input type="text" class="form-control" name="contextLink" value="" id="contextLink" placeholder="Context Link">
+                    <input type="text" class="form-control" name="context" value="" id="context" placeholder="Context" type="email" class="validate">
+                    <input type="text" class="form-control validate" name="contextLink" value="" id="contextLink" placeholder="Context Link" type="url" data-error="wrong" data-success="right">
 				    {{!-- <button  class="btn btn-primary" id="text-enter-button">Submit</button> --}}
 			    </form>
         </div>
