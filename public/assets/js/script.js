@@ -5,7 +5,7 @@ $( document ).ready(function() {
 // Ajax + form info
 
     $(".modal1").on("submit", function(event) {
-		console.log(".modal1 submit was called);
+		console.log(".modal1 submit was called");
         event.preventDefault();
     
         var entryInfo = {
@@ -62,10 +62,9 @@ $(".materialize-textarea").on("input",function(event){
       else 
           return true; 
   }
-  
 
 
 
 });
 
-console.log("Routed Well");
+// console.log("Routed Well");
