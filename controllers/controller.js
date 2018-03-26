@@ -40,7 +40,8 @@ db.sequelize.query("SELECT a.*, b.*  FROM entries a, definitions b  where b.entr
     .then(function(dbEntry) {
     // into the main index, updating the page
       var hbsObject = {
-        entry: dbEntry
+        entry: dbEntry,
+        context: dbEntry,
       };
 	  console.log("dbEntry is \n" + JSON.stringify(dbEntry));	  
 	  console.log("hbsOject is \n" + JSON.stringify(hbsObject));
@@ -54,7 +55,7 @@ db.sequelize.query("SELECT a.*, b.*  FROM entries a, definitions b  where b.entr
 router.post("/api/getfirstentry", function(req, res) {
     db.Definition.findAll({
 		where:{
-			entryId: 1,
+			entryId: [],
 		}
 		
 	})
