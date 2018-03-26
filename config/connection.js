@@ -1,6 +1,6 @@
 var mysql = require("mysql");
 var express = require("express");
-var burger = express.Router();
+var routes = express.Router();
 var connection;
 
 if (process.env.JAWSDB_URL) {
