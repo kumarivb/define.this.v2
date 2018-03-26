@@ -88,3 +88,48 @@
         </div>
     </div>
 </div>
+
+
+
+<!-- Submit Modal New Entry -->
+    <div id="modal1" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4>New Entry:</h4>
+            <p>A bunch of text</p>
+<!-- Submit Modal New Entry Form-->
+                <form action="/index/create" method="POST">
+                    {{!-- <textarea id="textarea1" class="materialize-textarea" name="entry" id="entry"></textarea> <label for="textarea1">Textarea</label> --}}
+                    <input type="text" class="form-control" name="entry" value="" id="entry" placeholder="Keyword/Phrase">
+                    <input type="text" class="form-control" name="userId" value="" id="userId" placeholder="User Name">
+                    <input type="text" class="form-control" name="context" value="" id="context" placeholder="Context">
+                    <input type="text" class="form-control" name="contextLink" value="" id="contextLink" placeholder="Context Link">
+				    {{!-- <button  class="btn btn-primary" id="text-enter-button">Submit</button> --}}
+			    </form>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" type="submit" class="modal-action modal-close waves-effect waves-green btn-flat ">Submit</a>
+        </div>
+    </div>
+
+
+
+<!-- Submit Modal New Reply -->
+    <div id="modal2" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4>New Reply:</h4>
+            <p>A bunch of text</p>
+<!-- Submit Modal New Entry Form-->
+                <form action="/index/reply" method="POST">
+                    Characters Remaining:<span class="char-count">420</span>
+                    <textarea id="textarea1" data-length=420 class="materialize-textarea" name="entry" id="entry" placeholder="Write the Defintion here"></textarea>
+                    <input type="text" class="form-control" name="en" value="" id="entry" placeholder="Keyword/Phrase">
+                    <input type="text" class="form-control" name="userId" value="" id="userId" placeholder="User Name">
+                    <input type="text" class="form-control" name="context" value="" id="context" placeholder="Context If Applicable">
+                    <input type="text" class="form-control" name="contextLink" value="" id="contextLink" placeholder="Context Link If Applicable">
+				    {{!-- <button  class="btn btn-primary" id="text-enter-button">Submit</button> --}}
+			    </form>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" type="submit" class="modal-action modal-close waves-effect waves-green btn-flat ">Submit</a>
+        </div>
+    </div>

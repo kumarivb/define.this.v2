@@ -5,6 +5,7 @@ var methodOverride = require("method-override");
 var exphbs = require("express-handlebars");
 var handlebars = require('handlebars');
 var fs = require('fs');
+var path = require('path');
 
 // bring in the models
 var db = require("./models");
@@ -14,7 +15,9 @@ var app = express();
 
 // Sets up the Express app to handle data parsing
 // Static directory to be served
-app.use(express.static(__dirname + "public"));
+//app.use(express.static(__dirname + "public"));
+
+//app.use(express.static('public'));
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ 
@@ -23,6 +26,8 @@ app.use(bodyParser.urlencoded({
 
 // parse application/json
 app.use(bodyParser.json());
+
+app.use(express.static(path.join(__dirname, 'public/')));
 
 // method override
 app.use(methodOverride("_method"));

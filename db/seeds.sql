@@ -1,4 +1,5 @@
 USE  definethis_db;
+
 INSERT INTO Entries (entry, createdAt, updatedAt, userId, context, contextLink ) VALUES 
    ('ASSERT DOT NOTATION', "2018-03-16 10:24:07","2018-03-16 11:54:08", 123, "chai testing java script", "http://www.chaijs.com/guide/styles/"  );
 INSERT INTO Entries (entry, createdAt, updatedAt, userId, context, contextLink ) VALUES 
@@ -16,10 +17,13 @@ INSERT INTO Definitions (definition, createdAt, updatedAt, userId, entryId, netR
     "2018-03-20 10:24:07","2018-03-20 11:54:08", 130,1,0,"chai testing java script", "");
 INSERT INTO Definitions (definition, createdAt, updatedAt, userId, entryId, netRating, context, contextLink) VALUES
    ("OOP is a programming paradigm based on the concept of 'objects', which may contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known as methods. A feature of objects is that an object's procedures can access and often modify the data fields of the object with which they are associated (objects have a notion of 'this' or 'self').",
-    "2018-03-20 10:24:07","2018-03-20 11:54:08", 130,2,0,"chai testing java script", "");
+    "2018-03-20 10:24:07","2018-03-20 11:54:08", 130,2,0,"software engineering fundamentals", "");
+INSERT INTO Definitions (definition, createdAt, updatedAt, userId, entryId, netRating, context, contextLink) VALUES
+   ("In object oriented programming a key concept is Encapsulation, which is the process of combining data and functions into a single unit called class. In Encapsulation, the data is not accessed directly; it is accessed through the functions present inside the class. In simpler words, attributes of the class are kept private and public getter and setter methods are provided to manipulate these attributes.",
+    "2018-03-20 10:24:07","2018-03-20 11:54:08", 130,2,0,"software engineering fundamentals", "");
 INSERT INTO Definitions (definition, createdAt, updatedAt, userId, entryId, netRating, context, contextLink) VALUES
    ("In computing, aspect-oriented programming (AOP) is a programming paradigm that aims to increase modularity by allowing the separation of cross-cutting concerns. It does so by adding additional behavior to existing code (an advice) without modifying the code itself, instead separately specifying which code is modified via a 'pointcut' specification",
-    "2018-03-20 10:24:07","2018-03-20 11:54:08", 131,2,0,"chai testing java script", "");	
+    "2018-03-20 10:24:07","2018-03-20 11:54:08", 131,2,0,"software engineering fundamentals", "");	
 
     
 
